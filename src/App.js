@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TalentsPage from './components/Talentstuff/TalentsPage'; // TalentsPage is a component
 
-function App() {
+function MainApp() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/talents" element={<TalentsPage/>} />
+          {/* Define other routes as needed */}
+        </Routes>
+          <testButton /> {/*buttons*/}
+          <searchButton/> {/*search bar*/}
+        </div>
+      </Router>
   );
 }
 
-export default App;
+
+export default MainApp;
