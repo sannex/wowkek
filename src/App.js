@@ -14,10 +14,10 @@ function MainApp() {
           <Route path="/talents" element={<TalentsPage/>} />
           {/* Define other routes as needed */}
         </Routes>
-          <testButton /> {/*buttons*/}
-          <searchButton/> {/*search bar*/}
-        </div>
-      </Router>
+        <testButton /> {/*buttons*/}
+        <searchButton/> {/*search bar*/}
+      </div>
+    </Router>
   );
 }
 
