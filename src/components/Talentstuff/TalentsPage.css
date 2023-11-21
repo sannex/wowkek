@@ -1,0 +1,12 @@
+
+.talents-page {
+   background-image: url('https://images.pexels.com/photos/450055/pexels-photo-450055.jpeg');
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+}
+
+h1 {
+   color:rgba(255, 255, 255, 0.938);
+  }
+

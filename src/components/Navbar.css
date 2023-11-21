@@ -1,0 +1,31 @@
+/* Navbar.css */
+.navbar {
+    background-color: black; /* Black background color */
+    overflow: hidden; /* Ensures the navbar does not adjust its height to wrap the content */
+  }
+  
+  .nav-links {
+    list-style-type: none; /* Removes bullet points from the list */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Aligns links in a row */
+  }
+  
+  .nav-links li {
+    float: left; /* Floats each list item to the left */
+  }
+  
+  .nav-links li a {
+    display: block; /* Changes the links to block elements for easy styling */
+    color: white; /* White text color */
+    text-align: center; /* Centers the text within the link */
+    padding: 14px 16px; /* Adds padding for spacing around the text */
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  /* Change the color of links on hover */
+  .nav-links li a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
