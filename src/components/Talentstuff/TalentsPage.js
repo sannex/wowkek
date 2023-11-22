@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './TalentsPage.css';
-
+import SimpleContainer from './Maincard.js';
 
 function TalentsPage() {
   useEffect(() => {
@@ -14,10 +14,7 @@ function TalentsPage() {
   }, []);
 
   return (
-    <div className="talents-page">
-      <h1>Pick a class</h1>
-      {/* other content */}
-    </div>
+    <SimpleContainer />
   );
 }
 
