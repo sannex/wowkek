@@ -1,14 +1,4 @@
-.outer-card {
-    border: 1px solid #0a0909;
-    padding: 20px;
-    margin: 20px auto; /* Center the card horizontally */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    width: 80%; /* Adjust the width as needed */
-    min-height: 1000px; /* Set a minimum height */
-    background-color: black;
-    display: flex; /* Use flexbox to center content */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    border-radius: 10px; /* Optional: rounded corners */
+
+.container {
+    background-color: #ff0000; /* Replace #ff0000 with your desired color */
 }

@@ -1,28 +1,13 @@
-import Button from 'react-bootstrap/Button';
+import * as React from 'react';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
-
-function testButton() {
-    return (
-      <>
-        <div className="mb-2">
-          <Button variant="primary" size="lg">
-            Test button
-          </Button>{' '}
-          <Button variant="secondary" size="lg">
-            Test button
-          </Button>
-        </div>
-        <div>
-          <Button variant="primary" size="sm">
-            Register
-          </Button>{' '}
-          <Button variant="secondary" size="sm">
-            Sign in
-          </Button>
-        </div>
-      </>
-    );
-  }
-  
-  
-  export default testButton;
+export default function TestButton() {
+  return (
+    <Stack spacing={3} direction="row">
+      <Button variant="text">Test1</Button>
+      <Button variant="contained">Test2</Button>
+      <Button variant="outlined">Test3</Button>
+    </Stack>
+  );
+}
