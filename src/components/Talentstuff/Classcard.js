@@ -5,15 +5,15 @@ import CardActionArea from '@mui/material/CardActionArea';
 
 
  export const classes = [
-  { name: 'Warrior', imageUrl: '/assets/Pictures/warrior_warcraftflat.png', redirectUrl: '/warrior' },
-  { name: 'Paladin', imageUrl: '/assets/Pictures/paladin_warcraftflat.png', redirectUrl: '/paladin' },
-  { name: 'Hunter', imageUrl: '/assets/Pictures/hunter_warcraftflat.png', redirectUrl: '/hunter' },
-  { name: 'Rogue', imageUrl: '/assets/Pictures/rogue_warcraftflat.png', redirectUrl: '/rogue' },
-  { name: 'Priest', imageUrl: '/assets/Pictures/priest_warcraftflat.png', redirectUrl: '/priest' },
-  { name: 'Warlock', imageUrl: '/path/to/warlock-image.jpg', redirectUrl: '/warlock' },
-  { name: 'Shaman', imageUrl: '/path/to/shaman-image.jpg', redirectUrl: '/shaman' },
-  { name: 'Mage', imageUrl: '/path/to/mage-image.jpg', redirectUrl: '/mage' },
-  { name: 'Druid', imageUrl: '/path/to/druid-image.jpg', redirectUrl: '/druid' },
+  { name: 'Warrior', imageUrl: '/Pictures/warrior_warcraftflat.png', redirectUrl: '/warrior' },
+  { name: 'Paladin', imageUrl: '/Pictures/paladin_warcraftflat.png', redirectUrl: '/paladin' },
+  { name: 'Hunter', imageUrl: 'Pictures/hunter_warcraftflat.png', redirectUrl: '/hunter' },
+  { name: 'Rogue', imageUrl: '/Pictures/rogue_warcraftflat.png', redirectUrl: '/rogue' },
+  { name: 'Priest', imageUrl: '/Pictures/priest_warcraftflat.png', redirectUrl: '/priest' },
+  { name: 'Warlock', imageUrl: '/Pictures/warlock_warcraftflat.png', redirectUrl: '/warlock' },
+  { name: 'Shaman', imageUrl: '/Pictures/shaman_warcraftflat.png', redirectUrl: '/shaman' },
+  { name: 'Mage', imageUrl: '/Pictures/mage_warcraftflat.png', redirectUrl: '/mage' },
+  { name: 'Druid', imageUrl: '/Pictures/druid_warcraftflat.png', redirectUrl: '/druid' },
 ];
 
 
@@ -29,6 +29,7 @@ export default function ClassCard({ className, imageUrl, onCardClick }) {
         '&:hover': {
           boxShadow: 6,
         },
+        backgroundColor: 'transparent'
       }}
       onClick={onCardClick}
     >
